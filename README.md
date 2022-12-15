@@ -20,11 +20,11 @@ insert passed
 verification passed
 candidate list passed
 ```
-There are several HTTP routes to check DynamoDB
+There are several HTTP routes to check DynamoDB using the following parameters:
 
 ```
-<ip_address>:8000 # for instances
-<DNS_ADDRESS> # for Application Load Balancer
+<ip_address>:8000 - for instances
+<DNS_ADDRESS> - for Application Load Balancer
 ```   
 
 [GET] /gtg
