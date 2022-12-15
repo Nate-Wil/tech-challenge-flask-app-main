@@ -17,7 +17,7 @@ insert passed
 verification passed
 candidate list passed
 ```
-There is a user data script that updates the instaces, preps the environment and starts the application. The application will start automatically once the ec2 instances are created. It will take a few minutes after the instances start for the application to be ready for testing. Once it is ready, we can test to see if it is working by using the IP of an instance and running several route commands on it. 
+There is a user data script that updates the instances, preps the environment, installs and starts the application. The application will start automatically once the ec2 instances are created. It will take a few minutes after the instances start for the application to be ready for testing. Once it is ready, we can test to see if it is working by using the IP of an instance and running several route commands on it. 
 
 ```
 <ip_address>:8000 # for instances
