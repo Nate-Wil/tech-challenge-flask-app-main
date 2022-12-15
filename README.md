@@ -3,13 +3,13 @@
 
 This is an AWS infrastructure built in Terraform to deploy a python flask app that works with DynamoDB to hold data. It runs in a VPC with an internet gateway to 2 public subnets in two separate availability zones through a load balancer.
 
-The script to test it is found in root folder ".." -  To access it from SSH you will have to sudo -s to assume root privileges to "cd" into the "tech-challenge-flask-app-main.git" directory.  
+The script to test it is found in root folder ".." -  To access it from SSH, you will have to sudo -s to assume root privileges to "cd" into the "tech-challenge-flask-app-main.git" directory.  
 
 To run the script use the command
 
 ```python3 ./test_candidates.py <ip/dns address>:8000```
 
-The script should produce 4 checks
+The script should produce 4 checks. Check against the instance IP's as well as the load balancer DNS name.
 
 ```
 good to go passed 
