@@ -29,12 +29,12 @@ There is a user data script that updates the instaces, preps the environment and
 Simple healthcheck - returns HTTP 200 OK if everything is working
 Empty return
 
-##[GET] /gtg?details
+[GET] /gtg?details
 
 Advanced healthcheck - returns HTTP 200 OK if everything is working and some service details
 JSON return
 
-##[POST] /candidate/str:name
+[POST] /candidate/str:name
 
 Adds a new string (candidate name) to a list, returns HTTP 200 OK if working
 
@@ -49,12 +49,12 @@ dem: democratic
 rep: republican
 will error if supplied with something other than the three parameters above
 
-##[GET] /candidate/str:name
+[GET] /candidate/str:name
 
 Gets candidate name from the list, returns HTTP 200 OK and data
 JSON return
 
-##[GET] /candidates
+[GET] /candidates
 
 Gets list of all candidates from a list, returns HTTP 200 OK and data
 JSON return
