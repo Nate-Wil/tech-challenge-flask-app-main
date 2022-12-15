@@ -1,9 +1,12 @@
 # Uturn-Tech-Challenge-2022 Nate Wilson
 # 
 
-This is an AWS infrastructure built in Terraform to deploy a python flask app that works with DynamoDB to hold data. It runs in a VPC with an internet gateway to 2 public subnets in two separate availability zones through a load balancer.
+This is an AWS infrastructure built in Terraform to deploy a python flask app that uses DynamoDB. It runs in a VPC with an internet gateway to 2 public subnets in two separate availability zones through a load balancer.
 
-The script to test it is found in root folder ".." -  To access it from SSH, you will have to sudo -s to assume root privileges to "cd" into the "tech-challenge-flask-app-main.git" directory.  
+
+There is a user data script that updates the instances, preps the environment, installs and starts the application. The application will start automatically once the ec2 instances are created. It will take a few minutes after the instances start for the application to be ready for testing. Once it is ready, we can test to see if it is working by using the IP of an instance and running several commands on it.
+
+There is a test script located in the root folder ".." -  To access it from SSH, you will have to sudo -s to assume root privileges then "cd" into the "tech-challenge-flask-app-main" directory.  
 
 To run the script use the command
 
@@ -17,7 +20,7 @@ insert passed
 verification passed
 candidate list passed
 ```
-There is a user data script that updates the instances, preps the environment, installs and starts the application. The application will start automatically once the ec2 instances are created. It will take a few minutes after the instances start for the application to be ready for testing. Once it is ready, we can test to see if it is working by using the IP of an instance and running several route commands on it. 
+There are several HTTP routes to check DynamoDB
 
 ```
 <ip_address>:8000 # for instances
